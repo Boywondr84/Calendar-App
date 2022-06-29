@@ -1,12 +1,3 @@
-//Save button - ultimately save info to local storage
-var save = document.getElementsByClassName(".saveBtn");
-document.addEventListener("click", saveFunction);
-function saveFunction() {
-    document.getElementsByClassName(".saveBtn");
-    console.log("works");
-};
-
-
 // Date & Time display
 var date = moment();
 function displayDate() {
@@ -14,30 +5,27 @@ function displayDate() {
 };
 displayDate();
 
-// var block = document.createElement('input');
-// console.dir(block);
+// Save button: needs to get element by ID & event listener + function
+var saveButtons = document.querySelectorAll(".saveBtn");
+saveButtons.forEach(button => {
+    button.addEventListener("click", function handleClick(event) {
+        console.log("button clicked", event);
+    });
+});
 
-// document.body.appendChild(block);
 
-// document.createElement('p');
-// var hour = document.createElement('div');
-// var hourText = document.createTextNode("9am");
-// hour.appendChild(hourText);
-// document.body.appendChild(hour);
 
-// hour.setAttribute("class", "hour col-1 ml-5 pt-3 text-right");
+// Change text-area background color according to past, present, future
+// Text area needs a data index and time index
 
-// variable for local storage
-var schedule = {};
+// getHourEvent();
 
-// save to local storage
-var saveSchedule = function () {
-    localStorage.setItem("schedule", JSON.stringify(schedule));
-};
+// Save button - ultimately save info to local storage
+// $(".saveBtn").on("click", saveHourEvent)
 
-// create task input function
-// var scheduleTask = function () {
-//     var textInput = $("<p>")
-//     .text(textInput)
-//     .addClass(".textarea mb-1");
+
+// var saveHourEvent = function() {
+//     var saveText= $(this).siblings(".text-area").val();
+//     var saveHour= $(this).siblings(".hourTime").text();
+//     localStorage.setItem(saveHour, saveText);
 // }
