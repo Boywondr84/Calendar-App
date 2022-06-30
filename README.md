@@ -13,8 +13,10 @@
 - JavaScript
 
 ** Website:
+https://boywondr84.github.io/Calendar-App/
 
 ** Screenshot:
+<img src=".\assets\screenshot.png"></img>
 
 ** Contributions:
 Ryan Kahlbaugh
