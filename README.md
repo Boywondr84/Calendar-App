@@ -17,7 +17,7 @@
 https://boywondr84.github.io/Calendar-App/
 
 ** Screenshot:
-<img src=".\assets\screenshot1.png""></img>
+<img src=".\assets\screenshot1.png"></img>
 
 ** Contributions:
 Ryan Kahlbaugh
