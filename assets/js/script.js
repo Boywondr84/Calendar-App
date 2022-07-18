@@ -4,16 +4,14 @@ function displayDate() {
     document.getElementById("currentDay").innerText = "Today's date and time are " + date.format("MMMM Do YYYY, h:mm a");
 };
 displayDate();
-// var colorChangeEl = document.querySelector(".textarea");
+
 var currentHour = date.hour();
-console.log(currentHour);
+// console.log(currentHour);
 
-// var hourNine = moment().hour(09).format("H");
-// console.log(hourNine);
-
+// hour blocks
 var hour9 = (09);
 var hourNineBackground = document.getElementById("hour9")
-console.log(hour9);
+// console.log(hour9);
 
 var hour10 = (10);
 var hourTenBackground = document.getElementById("hour10");
@@ -139,16 +137,6 @@ if (hour17 < currentHour) {
 {
     hourSeventeenBackground.classList.add("future");
 };
-
-
-// if (hourNine < currentHour) {
-//     timeblockEl.addClass("past");
-// } else if (hourNine == currentHour) {
-//     timeblockEl.addClass(".present");
-// } else {
-//     timeblockEl.addClass(".future");
-// };
-
 
 // save button
 $(".saveBtn").on("click", function() {
